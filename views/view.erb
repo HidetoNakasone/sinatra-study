@@ -2,8 +2,12 @@
 <section>
   <h1>結果表示</h1>
   <ul>
-    <% session[:res].each do |row| %>
-    <li><%= row[0] %>: <span><%= row[1] %></span></li>
+    <%
+    if session[:res].nil?
+    else
+      session[:res].each do |row| %>
+        <li><%= row[0] %>: <span><%= row[1] %></span></li>
+      <% end %>
     <% end %>
   </ul>
   <a href="/form">再入力</a>

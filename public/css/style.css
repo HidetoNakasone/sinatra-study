@@ -28,13 +28,15 @@ form input {
 }
 
 form input[type="text"] {
-  width: 30%;
-  margin-left: 31%;
+  width: 20%;
+  margin-left: 40%;
 }
 
 form input[type="submit"] {
-  width: 6%;
-  margin-left: 2%;
+  width: 10%;
+  font-size: 140%;
+  margin-left: 45%;
+  margin-top: 20px;
 }
 
 section {
